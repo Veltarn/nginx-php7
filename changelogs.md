@@ -52,3 +52,7 @@ upgrade nginx to version 1.9.10
 
 **2016 / 01 / 25:**    
 add xdebug support   
+
+**2016 / 07 / 14**
+add vim and net-tools
+add /var/log/nginx as VOLUME

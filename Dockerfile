@@ -138,8 +138,8 @@ ADD supervisord.conf /etc/supervisord.conf
 #Remove zips
 RUN cd / && rm -rf /home/nginx-php
 
-#Create web folder
-VOLUME ["/data/www", "/usr/local/nginx/conf/ssl", "/usr/local/nginx/conf/vhost", "/usr/local/php/etc/php.d"]
+#Create web & log folder
+VOLUME ["/data/www", "/usr/local/nginx/conf/ssl", "/usr/local/nginx/conf/vhost", "/usr/local/php/etc/php.d", "/var/log/nginx"]
 RUN chown -R www:www /data/www
 ADD index.php /data/www/index.php
 
