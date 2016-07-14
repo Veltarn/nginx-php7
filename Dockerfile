@@ -13,6 +13,10 @@ RUN yum install -y gcc \
     cmake && \
     yum clean all
 
+RUN yum install -y vim \
+	net-tools.x86_64 && \
+	yum clean all
+
 #Install PHP library
 ## libmcrypt-devel DIY
 RUN rpm -ivh http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm && \
