@@ -143,6 +143,7 @@ VOLUME ["/data/www", "/usr/local/nginx/conf/ssl", "/usr/local/nginx/conf/vhost",
 RUN chown -R www:www /data/www
 ADD index.php /data/www/index.php
 
+ADD php.ini /usr/local/php/etc/php.ini
 ADD xdebug.ini /usr/local/php/etc/php.d/xdebug.ini
 
 #Update nginx config
